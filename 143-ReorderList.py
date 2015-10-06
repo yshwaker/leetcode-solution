@@ -83,7 +83,12 @@ class Solution(object):
             head = head.next
         print ""
 
+
 # Test Case
-sol = Solution()
-head = create(10)
-sol.reorderList(head)
+def main():
+    sol = Solution()
+    head = create(10)
+    sol.reorderList(head)
+
+if __name__ == "__main__":
+    main()

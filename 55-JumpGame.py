@@ -29,11 +29,11 @@ class Solution(object):
         #                 return True
         #             frontier.appendleft(i)
         # return False
-        # 
+        #
         # -----
         # Time Complexity: O(n)
         max_length = 0
-        i = 0 
+        i = 0
         while i <= max_length and i < len(nums):
             if nums[i] + i >= len(nums) - 1:
                 return True
@@ -41,6 +41,3 @@ class Solution(object):
                 max_length = max(max_length, nums[i] + i)
             i += 1
         return False
-
-
-
