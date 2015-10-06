@@ -8,6 +8,14 @@ class Solution(object):
         """
         :type height: List[int]
         :rtype: int
+        procedure:
+        maintain a stack and the value of the top element of stack(namely current).
+        each element in the stack consists of the bar height and
+        the max width of area it can form yet.
+        for each value V in the array, compare it with the current.
+        if it's smaller, pop the top element and calculate its area using height*width
+        repeat until the top element is smaller than new element V.
+        else push it to the stack.
         """
         stack = deque()
         current = -1
