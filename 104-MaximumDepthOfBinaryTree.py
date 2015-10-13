@@ -1,12 +1,23 @@
+__author__ = "Shihao Yu"
+"""
+source: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+date: 10-7-2015
+----------------
+problem:
+Given a binary tree, find its maximum depth.
+The maximum depth is the number of nodes along
+the longest path from the root node down to the farthest leaf node.
+----------------
+NOTE: it's a binary tree, not a heap or balanced binary tree
+Divide and Conquer
+"""
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
-# NOTE: it's a binary tree, not a heap or balanced binary tree
-# Divide and Conquer
 
 
 class Solution(object):

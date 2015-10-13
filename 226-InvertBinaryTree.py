@@ -1,3 +1,25 @@
+__author__ = "Shihao Yu"
+"""
+source: https://leetcode.com/problems/invert-binary-tree/
+date: 10-7-2015
+----------------
+problem:
+Invert a binary tree.
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+---------------
+"""
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

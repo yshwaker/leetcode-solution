@@ -1,11 +1,22 @@
+__author__ = "Shihao Yu"
+"""
+source: https://leetcode.com/problems/same-tree/
+date: 10-7-2015
+----------------
+problem:
+Given two binary trees, write a function to check if they are equal or not.
+Two binary trees are considered equal if they are structurally identical and
+the nodes have the same value.
+----------------
+Divide and Conquer
+"""
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
-# Divide and Conquer
 
 
 class Solution(object):
