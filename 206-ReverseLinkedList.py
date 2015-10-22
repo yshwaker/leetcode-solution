@@ -1,6 +1,6 @@
 __author__ = "Shihao Yu"
 """
-source: https://leetcode.com/problemset/algorithms/
+source: https://leetcode.com/problems/reverse-linked-list/
 date: 10-19-2015
 ----------------
 problem:

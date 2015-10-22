@@ -1,5 +1,5 @@
 """
-source: https://leetcode.com/problemset/algorithms/
+source: https://leetcode.com/problems/majority-element/
 date: 10-18-2015
 ----------------
 Given an array of size n, find the majority element.
