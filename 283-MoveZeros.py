@@ -20,6 +20,7 @@ Special thanks to @jianchao.li.fighter for adding this problem and creating all 
 
 
 class Solution(object):
+
     def moveZeroes(self, nums):
         """
         :type nums: List[int]
@@ -27,16 +28,16 @@ class Solution(object):
         """
         if len(nums) == 0:
             return
-        pt = 0
-        zero_pt = 0  # the position of first zero currently
-        count = 0  # the number of zeros
-        while pt < len(nums):
-            if nums[pt] == 0:
-                if count == 0:
-                    zero_pt = pt
-                count += 1
+        cur_pt = 0
+        zero_pt = 0
+        zero_count = 0
+        while cur_pt < len(nums):
+            if nums[cur_pt] == 0:
+                if zero_count == 0:
+                    zero_pt = cur_pt
+                zero_count += 1
             else:
-                if count > 0:
-                    nums[pt], nums[zero_pt] = nums[zero_pt], nums[pt]
-                    zero_pt = pt if count == 1 else zero_pt + 1
-            pt += 1
+                if zero_count > 0:
+                    nums[cur_pt], nums[zero_pt] = nums[zero_pt], nums[cur_pt]
+                    zero_pt += 1
+            cur_pt += 1
