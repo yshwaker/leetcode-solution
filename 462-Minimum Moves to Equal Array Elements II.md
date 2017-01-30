@@ -84,7 +84,7 @@ def minMoves2(self, nums):
         pivot = nums[end]
         storeIndex = start
         for i in range(start, end):
-            if nums[i] < pivot:
+            if nums[i] < pivot:   # <= or < is ok
                 nums[i], nums[storeIndex] = nums[storeIndex], nums[i]
                 storeIndex += 1
         nums[end], nums[storeIndex] = nums[storeIndex], nums[end]
