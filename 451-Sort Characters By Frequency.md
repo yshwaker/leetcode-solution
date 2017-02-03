@@ -66,8 +66,6 @@ class Solution(object):
 
 bucket-sort method:
 ```
-import heapq
-
 class Solution(object):
     def frequencySort(self, s):
         """
@@ -92,9 +90,11 @@ class Solution(object):
 ```
 ## Some thinking
 
-hashmap to calculate frequences.
+1. hashmap to calculate frequences.
 
-heap to sort based on frequence.
+2. heap to sort based on frequence.
+
+3. similar to No.347.
 
 ## Complexity
 
