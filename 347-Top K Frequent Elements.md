@@ -66,6 +66,8 @@ freq_dict = defaultdict(int)
 
 3. similar to No.451
 
+4. can not initialize 2d array using [[]] * 10, use [None] * 10 instead.
+
 ## Complexity
 
 time: O(nlgn) hash and heapsort
