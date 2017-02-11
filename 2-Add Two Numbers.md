@@ -24,8 +24,8 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        result = ListNode(0)
-        cur = result
+        dummy = ListNode(0)
+        cur = dummy
         carry = 0
         while l1 is not None or l2 is not None or carry != 0:
             val = carry
@@ -43,7 +43,7 @@ class Solution(object):
             newNode = ListNode(val)
             cur.next = newNode
             cur = newNode
-        return result.next
+        return dummy.next
 
 
 ```
